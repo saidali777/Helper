@@ -1,6 +1,7 @@
 # worker: python script.py --> Procfile
 # heroku ps:scale worker=1 --> CLI
-from telegram import InlineQueryResultArticle, InputTextMessageContent, ReplyKeyboardMarkup, ReplyKeyboardRemove, ParseMode
+from telegram import InlineQueryResultArticle, InputTextMessageContent, ReplyKeyboardMarkup, ReplyKeyboardRemove
+from telegram.constants import ParseMode
 from telegram.ext import Updater, InlineQueryHandler, CommandHandler, MessageHandler, Filters, ConversationHandler
 from credentials import bot_token
 from helper_functions import *
